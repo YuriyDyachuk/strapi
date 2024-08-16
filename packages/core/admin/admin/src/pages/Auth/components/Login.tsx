@@ -82,7 +82,7 @@ const Login = ({ children }: LoginProps) => {
               <Typography variant="epsilon" textColor="neutral600">
                 {formatMessage({
                   id: 'Auth.form.welcome.subtitle',
-                  defaultMessage: 'Log in to your Strapi account',
+                  defaultMessage: 'Log in to your Diyar Alkhair account',
                 })}
               </Typography>
             </Box>
@@ -181,7 +181,7 @@ const Login = ({ children }: LoginProps) => {
                     })}
                   </Checkbox>
                   <Button fullWidth type="submit">
-                    {formatMessage({ id: 'Auth.form.button.login', defaultMessage: 'Login' })}
+                    {formatMessage({ id: 'Auth.form.button.login', defaultMessage: 'Log in' })}
                   </Button>
                 </Flex>
               </Form>
@@ -195,7 +195,7 @@ const Login = ({ children }: LoginProps) => {
             <Link as={NavLink} to="/auth/forgot-password">
               {formatMessage({
                 id: 'Auth.link.forgot-password',
-                defaultMessage: 'Forgot your password?',
+                defaultMessage: 'Forgot password?',
               })}
             </Link>
           </Box>

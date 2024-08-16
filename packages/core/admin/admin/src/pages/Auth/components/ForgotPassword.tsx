@@ -33,8 +33,8 @@ const ForgotPassword = () => {
             <Box paddingTop={6} paddingBottom={7}>
               <Typography as="h1" variant="alpha">
                 {formatMessage({
-                  id: 'Auth.form.button.password-recovery',
-                  defaultMessage: 'Password Recovery',
+                  id: 'Auth.form.button.forgot-password',
+                  defaultMessage: 'Forgot Password?',
                 })}
               </Typography>
             </Box>
@@ -74,13 +74,13 @@ const ForgotPassword = () => {
                       errors.email
                         ? formatMessage({
                             id: errors.email,
-                            defaultMessage: 'This email is invalid.',
+                            defaultMessage: 'Enter E-mail address to request password change ',
                           })
                         : ''
                     }
                     value={values.email}
                     onChange={handleChange}
-                    label={formatMessage({ id: 'Auth.form.email.label', defaultMessage: 'Email' })}
+                    label={formatMessage({ id: 'Auth.form.email.label-custom', defaultMessage: 'Email' })}
                     placeholder={formatMessage({
                       id: 'Auth.form.email.placeholder',
                       defaultMessage: 'kai@doe.com',
